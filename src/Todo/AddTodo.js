@@ -11,9 +11,11 @@ function AddTodo({onCreate}){
 
         if(value.trim()){
             onCreate(value)
+            setValue('')
         }
     }
 
+    
     return(
         <form style={{marginBottom: '1rem'}} onSubmit={submitHandler}>
             <input value = {value} onChange={event => setValue(event.target.value)}/>

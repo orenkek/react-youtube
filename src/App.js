@@ -34,7 +34,7 @@ function App() {
   function addTodo(title){
     setTodos(todos.concat([{
       title,
-      id: Date.now,
+      id: Date.now(),
       completed: false
     }]))
   }
